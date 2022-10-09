@@ -117,7 +117,7 @@ class DumpRequests(object):
 
 
 def main():
-    print(f"[-] Testing DumpRequests class ofr dynamic patching of requests")
+    print(f"[-] Testing DumpRequests class for dynamic patching of requests")
     dr = DumpRequests()
     print(f"[-] DumpRequests working dir is {dr.working_dir} (is currently patched: {dr.is_requests_debug_already_patched})")
 
