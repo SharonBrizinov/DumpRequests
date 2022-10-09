@@ -1,8 +1,7 @@
 # DumpRequests
 Simple stupid class for globaly auto patching the entire python requests library to dump all requests and responses, for debug purposes.
 
-This is a simple class `DumpRequests` that dynamically patched the popular python requests module to dump ALL requests and responses without the need to specify individual hooks for each call. It does it by setting up dynamic hooks for every HTTP method (GET, POST, DELETE, OPTIONS, etc) and it also patches the `Sessions` class. This comes very handy when doing extensive debug sessions and one needs to review all ongoing HTTP traffic generated from requests calls.
-
+This is a simple class `DumpRequests` that dynamically patched the popular python requests module to dump ALL requests and responses without the need to specify individual hooks for each call. It does it by setting up dynamic hooks for every HTTP method (GET, POST, DELETE, OPTIONS, etc) and it also patches the `Sessions` class. This comes very handy when doing extensive debug sessions and one needs to review all ongoing HTTP traffic generated from requests calls. The idea was based on [this project](https://github.com/torufurukawa/requests-dump).
 
 # How to use
 ```
